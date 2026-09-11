@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР2</title>
+</head>
+<body>
+    <h3>Завантажити картинку</h3>
+    <form enctype="multipart/form-data" action="process.php" method="POST">
+        <input type="file" name="user_file"><br><br>
+        <input type="submit" value="Закинути">
+    </form>
+    
+    <h3>Запис у файл</h3>
+    <form action="text.php" method="POST">
+        <textarea name="log_text"></textarea><br><br>
+        <input type="submit" value="Записати">
+    </form>
+    <br>
+    <a href="list.php">Подивитись файли</a>
+</body>
+</html>
